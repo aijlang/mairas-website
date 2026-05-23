@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitten Gems | Modern Handmade Jewelry & Gemstones</title>
+  <meta name="description"
+    content="Explore Kitten Gems, a Latina-owned small business featuring uniquely hand-crafted beaded jewelry, gemstone necklaces, earrings, bracelets, and accessories designed by Maira.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+     2. STICKY HEADER & NAVIGATION
+     ========================================== -->
+  <header class="site-header glass-panel" id="main-site-header">
+    <div class="container header-container">
+      <!-- Menu Burger for Mobile -->
+      <button class="header-btn menu-burger" id="burger-menu-trigger" aria-label="Toggle navigation menu">
+        <span class="material-icons-outlined">menu</span>
+      </button>
+
+      <!-- Brand Logo -->
+      <a href="#" class="logo" id="site-logo-link" style="display: flex; align-items: center; gap: 10px;">
+        <img src="logo.jpg" alt="Kitten Gems Logo" class="logo-image"
+          style="height: 40px; width: auto; border-radius: var(--radius-xs); object-fit: contain;">
+        <span>KITTEN GEMS</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" id="desktop-navigation-bar">
+        <a href="#" class="nav-link active" data-category="all">Shop All</a>
+        <a href="#catalog" class="nav-link" data-category="Necklace">Necklaces</a>
+        <a href="#catalog" class="nav-link" data-category="Earrings">Earrings</a>
+        <a href="#catalog" class="nav-link" data-category="Bracelet">Bracelets</a>
+        <a href="#catalog" class="nav-link" data-category="accessories">Accessories</a>
+        <a href="#about" class="nav-link">Our Story</a>
+      </nav>
+
+      <!-- Actions Buttons -->
+      <div class="header-actions">
+        <button class="header-btn" id="search-bar-toggle" aria-label="Open search">
+          <span class="material-icons-outlined">search</span>
+        </button>
+        <button class="header-btn" id="user-profile-toggle" aria-label="View user profile">
+          <span class="material-icons-outlined">person</span>
+        </button>
+        <button class="header-btn" id="cart-drawer-toggle" aria-label="Open shopping cart">
+          <span class="material-icons-outlined">shopping_bag</span>
+          <span class="cart-count" id="header-cart-badge-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Panel -->
+  <div class="mobile-nav-panel" id="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <a href="#" class="logo" style="display: flex; align-items: center; gap: 8px;">
+        <img src="logo.jpg" alt="Kitten Gems Logo"
+          style="height: 32px; width: auto; border-radius: var(--radius-xs); object-fit: contain;">
+        <span style="font-size: 1.8rem; font-weight: 800; color: var(--color-primary); letter-spacing: 0.1em;">KITTEN
+          GEMS</span>
+      </a>
+      <button class="header-btn" id="mobile-nav-close" aria-label="Close menu">
+        <span class="material-icons-outlined">close</span>
+      </button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#" class="mobile-nav-link active" data-category="all">Shop All</a>
+      <a href="#catalog" class="mobile-nav-link" data-category="Necklace">Necklaces</a>
+      <a href="#catalog" class="mobile-nav-link" data-category="Earrings">Earrings</a>
+      <a href="#catalog" class="mobile-nav-link" data-category="Bracelet">Bracelets</a>
+      <a href="#catalog" class="mobile-nav-link" data-category="accessories">Accessories</a>
+      <a href="#about" class="mobile-nav-link">Our Story</a>
+    </div>
+    <div class="mobile-nav-footer"
+      style="margin-top: auto; padding-top: 30px; border-top: 1px solid var(--border-glass);">
+      <div class="hero-tagline"
+        style="margin-bottom: 12px; font-size: 1.1rem; justify-content: flex-start; letter-spacing: 0.1em;">Connect with
+        us</div>
+      <div class="social-icons-group">
+        <a href="https://www.instagram.com/kit10gems/" target="_blank" class="social-icon-btn"
+          aria-label="Kitten Gems Instagram Profile">
+          <span class="material-icons-outlined">camera</span>
+        </a>
+        <a href="https://www.tiktok.com/@kit10gems" target="_blank" class="social-icon-btn"
+          aria-label="Kitten Gems TikTok Profile">
+          <span class="material-icons-outlined">smart_display</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+     3. HERO SPLIT SECTION
+     ========================================== -->
+  <section class="hero-section" id="hero-banner-main">
+    <div class="container hero-grid">
+      <div class="hero-content" data-reveal="left">
+        <div class="hero-tagline">Handmade Beaded Jewelry</div>
+        <h1 class="hero-title">Intricately crafted, <span>designed to inspire</span>.</h1>
+        <p class="hero-description">Latina-owned and designed with care by Maira. My artisan necklaces, delicate
+          earrings, and bracelets blend fresh glass beads, vintage pearls, and raw gems to tell your unique story.</p>
+        <div class="hero-actions-group">
+          <a href="#catalog" class="btn btn-primary" id="hero-cta-shop-now">Shop the Collection</a>
+          <a href="#about" class="btn btn-outline" id="hero-cta-our-story">Meet Maira</a>
+        </div>
+      </div>
+      <div class="hero-visual" data-reveal="right" style="--reveal-delay: 120ms">
+        <div class="hero-image-wrap">
+          <!-- Featuring a real product image of the Cherry Blossom Necklace -->
+          <img src="https://cdn.shopify.com/s/files/1/0689/1536/4016/files/IMG_3627.jpg?v=1779075549"
+            alt="Cherry Blossom Collection Necklace by Kitten Gems">
+        </div>
+        <div class="hero-floating-badge">
+          <div class="hero-badge-icon">
+            <span class="material-icons-outlined">favorite</span>
+          </div>
+          <div class="hero-badge-text">
+            <h4>Handcrafted Drop</h4>
+            <p>100% Unique Pieces</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     EDITORIAL MARQUEE BAND
+     ========================================== -->
+  <div class="marquee-band" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="marquee-word">Handmade</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Latina-Owned</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Artisan Crafted</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Kitten Gems</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Czech Glass</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Gold Plated</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">One of a Kind</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Small Batch</span><span class="marquee-gem">✦</span></span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item"><span class="marquee-word">Handmade</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Latina-Owned</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Artisan Crafted</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Kitten Gems</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Czech Glass</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Gold Plated</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">One of a Kind</span><span class="marquee-gem">✦</span></span>
+      <span class="marquee-item"><span class="marquee-word">Small Batch</span><span class="marquee-gem">✦</span></span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+     4. BRAND VALUE PROP SECTION
+     ========================================== -->
+  <section class="features-section" id="brand-values-grid">
+    <div class="container features-grid">
+      <div class="feature-card" data-reveal style="--reveal-delay: 0ms">
+        <div class="feature-icon">
+          <span class="material-icons-outlined">auto_awesome</span>
+        </div>
+        <h3>Handmade with Love</h3>
+        <p>Every single gemstone, glass bead, and clasp is hand-wired and curated directly by artist Maira.</p>
+      </div>
+      <div class="feature-card" data-reveal style="--reveal-delay: 80ms">
+        <div class="feature-icon">
+          <span class="material-icons-outlined">female</span>
+        </div>
+        <h3>Latina-Owned & Proud</h3>
+        <p>A vibrant, minority-owned small business blending colorful heritage aesthetics with contemporary jewelry
+          trends.</p>
+      </div>
+      <div class="feature-card" data-reveal style="--reveal-delay: 160ms">
+        <div class="feature-icon">
+          <span class="material-icons-outlined">local_shipping</span>
+        </div>
+        <h3>Free US Shipping</h3>
+        <p>Every order over $50 ships free, tucked inside beautiful branded packaging with a handwritten note from Maira.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     4b. NEW DROP SPOTLIGHT — CEREZAS CHERRY BLOSSOM
+     ========================================== -->
+  <section class="new-drop-section" id="featured-new-drop">
+    <div class="container">
+      <div class="new-drop-grid">
+        <div class="new-drop-visual" data-reveal="left">
+          <div class="new-drop-image-main">
+            <img src="https://cdn.shopify.com/s/files/1/0689/1536/4016/files/IMG_3627.jpg?v=1779075549"
+              alt="Cerezas Cherry Blossom Collection by Kitten Gems">
+            <div class="new-drop-live-tag">Now Live</div>
+          </div>
+          <div class="new-drop-image-sub">
+            <img src="https://cdn.shopify.com/s/files/1/0689/1536/4016/files/IMG_3629.jpg?v=1779075549"
+              alt="Cherry blossom detail shot">
+          </div>
+        </div>
+        <div class="new-drop-content" data-reveal="right" style="--reveal-delay: 120ms">
+          <div class="hero-tagline">New Collection</div>
+          <h2>The Cerezas<br><span>Cherry Blossom</span> Drop</h2>
+          <p>Delicate Czech glass cherry beads hand-wired through gold-plated brass — designed for the girl who wants to carry spring wherever she goes. Small batch. Each piece unique.</p>
+          <ul class="new-drop-details">
+            <li><span class="material-icons-outlined">auto_awesome</span> Czech crystal glass cherry beads</li>
+            <li><span class="material-icons-outlined">eco</span> Gold-plated brass findings</li>
+            <li><span class="material-icons-outlined">favorite</span> 100% hand-wired by Maira</li>
+          </ul>
+          <div class="new-drop-actions">
+            <a href="#catalog" class="btn btn-primary">Shop the Drop</a>
+            <span class="badge badge-in-stock">In Stock Now</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     5. DYNAMIC CATALOG SECTION (GRID, FILTERS, SEARCH)
+     ========================================== -->
+  <section class="catalog-section" id="catalog">
+    <div class="container">
+      <div class="catalog-header">
+        <h2 class="catalog-title">Explore My Jewelry Vault</h2>
+        <p class="catalog-subtitle">Filter through my delicate drop items. Toggle availability, search by design
+          features, and select your favorite pieces.</p>
+      </div>
+
+      <div class="catalog-layout">
+        <!-- Sidebar Filters -->
+        <aside class="filter-sidebar glass-panel" id="catalog-sidebar-filters">
+          <div class="filter-group">
+            <h4 class="filter-title">Search Vault</h4>
+            <div class="filter-search-box">
+              <span class="material-icons-outlined">search</span>
+              <input type="text" id="catalog-search-input" placeholder="Search cherry, beads, gold...">
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h4 class="filter-title">Availability</h4>
+            <div class="toggle-switch" id="filter-instock-toggle">
+              <span class="switch-label">In-Stock Only</span>
+              <div class="switch-control"></div>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h4 class="filter-title">Collections</h4>
+            <div class="filter-chips" id="filter-category-chips">
+              <button class="filter-chip active" data-type="all">All Items</button>
+              <button class="filter-chip" data-type="Necklace">Necklaces</button>
+              <button class="filter-chip" data-type="Earrings">Earrings</button>
+              <button class="filter-chip" data-type="Bracelet">Bracelets</button>
+              <button class="filter-chip" data-type="accessories">Accessories</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h4 class="filter-title">Material Details</h4>
+            <ul class="filter-list" id="filter-tags-list">
+              <li class="filter-item">
+                <label>
+                  <input type="checkbox" class="tag-checkbox" value="gold plated">
+                  Gold Plated Findings
+                </label>
+              </li>
+              <li class="filter-item">
+                <label>
+                  <input type="checkbox" class="tag-checkbox" value="glass beads">
+                  Czech Glass Beads
+                </label>
+              </li>
+              <li class="filter-item">
+                <label>
+                  <input type="checkbox" class="tag-checkbox" value="Florals">
+                  Floral Accents
+                </label>
+              </li>
+              <li class="filter-item">
+                <label>
+                  <input type="checkbox" class="tag-checkbox" value="mother of pearl">
+                  Mother of Pearl
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <button class="btn btn-outline" style="width: 100%; font-size: 1.2rem; padding: 10px 0;"
+            id="clear-filters-btn">Reset Filters</button>
+        </aside>
+
+        <!-- Catalog Body Grid -->
+        <main class="catalog-main-content">
+          <div class="catalog-toolbar">
+            <div class="results-count" id="catalog-results-counter">
+              Showing <strong>0</strong> of <strong>0</strong> unique products
+            </div>
+
+            <div style="display: flex; gap: 12px;">
+              <button class="mobile-filter-trigger" id="mobile-filter-btn">
+                <span class="material-icons-outlined">tune</span> Filters
+              </button>
+
+              <div class="sort-select-box">
+                <label for="catalog-sort-select">Sort By</label>
+                <select class="sort-dropdown" id="catalog-sort-select">
+                  <option value="featured">Featured Drops</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="alpha-az">Name: A to Z</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Products Grid Container -->
+          <div class="product-grid" id="main-products-grid-container">
+            <!-- Dynamically Rendered by JS -->
+          </div>
+
+          <!-- Empty Catalog Alert -->
+          <div class="catalog-empty-state" id="catalog-empty-placeholder" style="display: none;">
+            <span class="material-icons-outlined">search_off</span>
+            <h3>No Jewelry Found</h3>
+            <p>We couldn't find any pieces matching your search or filters. Try adjusting your query or resetting
+              filters!</p>
+            <button class="btn btn-primary" id="empty-state-reset-btn">Reset All Filters</button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     5b. INTERACTIVE GEMSTONE STYLE MATCHMAKER WIZARD
+     ========================================== -->
+  <section class="matchmaker-section" id="gemstone-matchmaker">
+    <div class="container">
+      <div class="matchmaker-card glass-panel" data-reveal="scale">
+        <div class="matchmaker-header">
+          <div class="hero-tagline" style="justify-content: center; margin-bottom: 8px;">Intuitive Style Finder</div>
+          <h2>Find Your Gemstone <span>Matchmaker</span></h2>
+          <p>Answer three simple questions about your intentions and style profile, and let our custom artisan engine
+            recommend the jewelry piece that speaks to your aura.</p>
+        </div>
+
+        <div class="matchmaker-steps-container" id="matchmaker-flow-container">
+          <!-- Step 1: Intention/Energy -->
+          <div class="matchmaker-step active" data-step="1">
+            <h3 class="step-question">1. What intention or energy are you seeking today?</h3>
+            <div class="matchmaker-options-grid">
+              <button class="matchmaker-option-btn" data-field="energy" data-value="love">
+                <span class="material-icons-outlined">favorite</span>
+                <h4>Love & Radiance</h4>
+                <p>Nurture relationships, invite self-love, and shine with warm pink hues.</p>
+              </button>
+              <button class="matchmaker-option-btn" data-field="energy" data-value="peace">
+                <span class="material-icons-outlined">spa</span>
+                <h4>Clarity & Peace</h4>
+                <p>Calm the mind, seek tranquility, and align with serene white and pearls.</p>
+              </button>
+              <button class="matchmaker-option-btn" data-field="energy" data-value="vibrant">
+                <span class="material-icons-outlined">bolt</span>
+                <h4>Playful & Vibrant</h4>
+                <p>Express joy, ignite creativity, and spark conversation with bright glass beads.</p>
+              </button>
+              <button class="matchmaker-option-btn" data-field="energy" data-value="abundance">
+                <span class="material-icons-outlined">stars</span>
+                <h4>Abundance & Luck</h4>
+                <p>Attract positive energy, grounding, and luxury with warm golden tones.</p>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Preferred Style -->
+          <div class="matchmaker-step" data-step="2">
+            <h3 class="step-question">2. How would you describe your jewelry style?</h3>
+            <div class="matchmaker-options-grid">
+              <button class="matchmaker-option-btn" data-field="style" data-value="dainty">
+                <span class="material-icons-outlined">auto_awesome</span>
+                <h4>Dainty & Elegant</h4>
+                <p>Delicate, minimal strands that catch the light softly.</p>
+              </button>
+              <button class="matchmaker-option-btn" data-field="style" data-value="bold">
+                <span class="material-icons-outlined">filter_vintage</span>
+                <h4>Bold & Whimsical</h4>
+                <p>Fun shapes, colorful patterns, and statement floral combinations.</p>
+              </button>
+              <button class="matchmaker-option-btn" data-field="style" data-value="classic">
+                <span class="material-icons-outlined">diamond</span>
+                <h4>Classic & Timeless</h4>
+                <p>Traditional charms, classic pearls, and balanced proportions.</p>
+              </button>
+              <button class="matchmaker-option-btn" data-field="style" data-value="boho">
+                <span class="material-icons-outlined">layers</span>
+                <h4>Layered & Bohemian</h4>
+                <p>Wired charms, organic asymmetrical shapes, and mixed textures.</p>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Type of Jewelry -->
+          <div class="matchmaker-step" data-step="3">
+            <h3 class="step-question">3. What kind of accessory are you shopping for?</h3>
+            <div class="matchmaker-options-grid">
+              <button class="matchmaker-option-btn" data-field="type" data-value="Necklace">
+                <span class="material-icons-outlined">format_list_bulleted</span>
+                <h4>Necklace or Choker</h4>
+                <p>Beautiful centerpiece chains and strands to frame your face.</p>
+              </button>
+              <button class="matchmaker-option-btn" data-field="type" data-value="Earrings">
+                <span class="material-icons-outlined">earbuds</span>
+                <h4>Earrings or Hoops</h4>
+                <p>Wired dangles and gold-plated hoops that catch the breeze.</p>
+              </button>
+              <button class="matchmaker-option-btn" data-field="type" data-value="Bracelet">
+                <span class="material-icons-outlined">watch</span>
+                <h4>Bracelet</h4>
+                <p>Stunning beaded cuffs and delicate chains for your wrist.</p>
+              </button>
+              <button class="matchmaker-option-btn" data-field="type" data-value="any">
+                <span class="material-icons-outlined">stars</span>
+                <h4>Surprise Me!</h4>
+                <p>Open to any beautiful handcrafted accessory in Maira's vault.</p>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 4: Loading Screen -->
+          <div class="matchmaker-step matchmaker-loading" data-step="loading">
+            <div class="matchmaker-spinner-wrap">
+              <div class="matchmaker-spinner"></div>
+              <span class="material-icons-outlined matchmaker-spinning-icon">auto_awesome</span>
+            </div>
+            <h3>Reading Your Aura...</h3>
+            <p>Maira's jewelry vault is selecting the perfect handcrafted piece matching your energetic vibrations.</p>
+          </div>
+
+          <!-- Step 5: Result Screen -->
+          <div class="matchmaker-step matchmaker-result" data-step="result">
+            <div class="matchmaker-result-grid" id="matchmaker-result-display">
+              <!-- Rendered Dynamically by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Wizard Navigation Footer -->
+        <div class="matchmaker-footer" id="matchmaker-nav-controls">
+          <button class="btn btn-outline" id="matchmaker-prev-btn" disabled>Back</button>
+          <div class="matchmaker-progress-dots">
+            <span class="dot active" data-step="1"></span>
+            <span class="dot" data-step="2"></span>
+            <span class="dot" data-step="3"></span>
+          </div>
+          <button class="btn btn-primary" id="matchmaker-next-btn" disabled>Next</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     7. "MEET MAIRA" DETAILED BRAND STORY
+     ========================================== -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual" data-reveal="left">
+        <div class="about-image-stack">
+          <!-- Featuring a stack of real beautiful product photos -->
+          <img src="https://kittengems.com/cdn/shop/files/IMG_7254.jpg?v=1757468406" class="about-img-main"
+            alt="Founder Maira at the Salt Lake wearing handmade jewelry">
+          <img src="https://cdn.shopify.com/s/files/1/0689/1536/4016/files/IMG_3645.jpg?v=1779075620"
+            class="about-img-sub" alt="Hoops of Oro glass jewelry">
+        </div>
+      </div>
+      <div class="about-content" data-reveal="right" style="--reveal-delay: 120ms">
+        <div class="hero-tagline">Behind Kitten Gems</div>
+        <h2>Meet Maira, <span>the Maker & Designer</span></h2>
+        <p>Kitten Gems started out of a deep-seated passion for delicate craftsmanship, gemstones, and playful patterns.
+          Disheartened by mass-manufactured, quickly tarnished jewelry, founder Maira set out to handcraft custom
+          accessories that represent personality, beauty, and resilience.</p>
+        <p>Every single piece is completely unique. From hand-bending high-quality gold-plated brass hoops to setting
+          natural mother-of-pearl nuggets, Maira infuses warmth, heritage, and modern e-commerce quality into each drop.
+        </p>
+        <p>“I believe that jewelry is a personal signature. Whether it is a colorful glass cherry bead set or refined
+          raw pearls, it should evoke delight and confidence.”</p>
+        <a href="#catalog" class="btn btn-primary">Browse Handmade Drops</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     7. TESTIMONIALS & REVIEWS SECTION
+     ========================================== -->
+  <section class="testimonials-section" id="customer-reviews-testimonials">
+    <div class="container">
+      <div class="catalog-header">
+        <h2 class="catalog-title">Loved by Gem Lovers</h2>
+        <p class="catalog-subtitle">Real reviews from our community about Maira's hand-crafted wire work and design
+          drops.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-reveal style="--reveal-delay: 0ms">
+          <div class="testimonial-stars">
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+          </div>
+          <p class="testimonial-text">"I am absolutely obsessed with my Cherry Blossom Necklace! The Czech glass beads
+            are so shiny and the gold plated clasp is extremely sturdy. I get compliments every single time I wear it.
+            Will buy from the next drop!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div class="testimonial-info">
+              <h4>Amanda R.</h4>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-reveal style="--reveal-delay: 100ms">
+          <div class="testimonial-stars">
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+          </div>
+          <p class="testimonial-text">"Maira's jewelry is pure art. I bought the Mixed Metals Hoops and the quality is
+            incredible—they are super lightweight and look extremely expensive. The pearlescent nuggets are so unique.
+            Love supporting Latina-owned!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">C</div>
+            <div class="testimonial-info">
+              <h4>Camila D.</h4>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-reveal style="--reveal-delay: 200ms">
+          <div class="testimonial-stars">
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+            <span class="material-icons-outlined">star</span>
+          </div>
+          <p class="testimonial-text">"Beautiful packaging, super fast shipping, and absolute state-of-the-art designs!
+            You can feel the love and attention to detail Maira puts in. I bought the Polka Polka Necklace and it fits
+            perfectly."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div class="testimonial-info">
+              <h4>Sofia M.</h4>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     8. INSTAGRAM SOCIALS FEED Grid
+     ========================================== -->
+  <section class="instagram-section" id="socials-gallery-instagram">
+    <div class="container">
+      <div class="instagram-section-header" data-reveal>
+        <div class="hero-tagline" style="justify-content: center;">Follow Along</div>
+        <h2 class="catalog-title" style="margin-top: 10px; margin-bottom: 8px;">@kit10gems</h2>
+        <p class="catalog-subtitle" style="margin-bottom: 36px;">Handmade drops, behind-the-scenes, and the gems that started it all.</p>
+        <div class="instagram-follow-btns">
+          <a href="https://www.instagram.com/kit10gems/" target="_blank" class="btn btn-primary instagram-follow-btn">
+            <i class="fa-brands fa-instagram"></i> Follow on Instagram
+          </a>
+          <a href="https://www.tiktok.com/@kit10gems" target="_blank" class="btn btn-outline instagram-follow-btn">
+            <i class="fa-brands fa-tiktok"></i> Follow on TikTok
+          </a>
+        </div>
+      </div>
+
+      <div class="instagram-mosaic">
+        <div class="instagram-mosaic-large">
+          <img src="https://cdn.shopify.com/s/files/1/0689/1536/4016/files/IMG_3627.jpg?v=1779075549"
+            alt="Cerezas Cherry Blossom necklace by Kitten Gems">
+          <div class="instagram-hover-overlay">
+            <i class="fa-brands fa-instagram"></i>
+            <span>@kit10gems</span>
+          </div>
+        </div>
+        <div class="instagram-mosaic-stack">
+          <div class="instagram-card">
+            <img src="https://cdn.shopify.com/s/files/1/0689/1536/4016/files/IMG_3629.jpg?v=1779075549"
+              alt="Cherry blossom necklace details">
+            <div class="instagram-hover-overlay">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="instagram-card">
+            <img src="https://cdn.shopify.com/s/files/1/0689/1536/4016/files/IMG_3635.jpg?v=1779150461"
+              alt="Cherrie earrings by Kitten Gems">
+            <div class="instagram-hover-overlay">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="instagram-mosaic-stack">
+          <div class="instagram-card">
+            <img src="https://cdn.shopify.com/s/files/1/0689/1536/4016/files/IMG_3640.jpg?v=1779075596"
+              alt="Mixed metals hoop details">
+            <div class="instagram-hover-overlay">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="instagram-card">
+            <img src="https://cdn.shopify.com/s/files/1/0689/1536/4016/files/IMG_3645.jpg?v=1779075620"
+              alt="Hoops of Oro product details">
+            <div class="instagram-hover-overlay">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="instagram-mosaic-large">
+          <img src="https://cdn.shopify.com/s/files/1/0689/1536/4016/files/IMG_3628.jpg?v=1779075552"
+            alt="Cherry Blossom details layout">
+          <div class="instagram-hover-overlay">
+            <i class="fa-brands fa-instagram"></i>
+            <span>@kit10gems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     10. FOOTER & TRUST BADGES
+     ========================================== -->
+  <footer class="site-footer" id="main-site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-info">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+            <img src="logo.jpg" alt="Kitten Gems Logo"
+              style="height: 36px; width: auto; border-radius: var(--radius-xs); object-fit: contain;">
+            <h3
+              style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-primary); letter-spacing: 0.1em; margin-bottom: 0;">
+              KITTEN GEMS</h3>
+          </div>
+          <p>Intricately handcrafted beaded jewelry using Czech crystal glass, pearls, and natural raw minerals.
+            Hand-wired by Maira.</p>
+          <div class="social-icons-group">
+            <a href="https://www.instagram.com/kit10gems/" target="_blank" class="social-icon-btn"
+              aria-label="Kitten Gems Instagram Profile">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@kit10gems/" target="_blank" class="social-icon-btn"
+              aria-label="Kitten Gems TikTok Profile">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Collections</h4>
+          <ul class="footer-links-list">
+            <li><a href="#catalog" class="footer-nav-link" data-category="Necklace">Necklaces</a></li>
+            <li><a href="#catalog" class="footer-nav-link" data-category="Earrings">Earrings</a></li>
+            <li><a href="#catalog" class="footer-nav-link" data-category="Bracelet">Bracelets</a></li>
+            <li><a href="#catalog" class="footer-nav-link" data-category="accessories">Accessories & Phone Charms</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Customer Care</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Shipping Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Our Philosophy</h4>
+          <ul class="footer-links-list">
+            <li><a href="#about">About Artisan Maira</a></li>
+            <li><a href="#">Latina-Owned Heritage</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          &copy; 2026 Kitten Gems. Crafted beautifully. Powered by Shopify & Maira. All rights reserved.
+        </div>
+        <div class="footer-payments-icons">
+          <span class="material-icons-outlined" title="Shop Pay Simulated">contactless</span>
+          <span class="material-icons-outlined" title="Apple Pay Simulated">payment</span>
+          <span class="material-icons-outlined" title="Credit Cards Supported">credit_card</span>
+          <span class="material-icons-outlined" title="Eco-friendly Packaging">eco</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+     11. INTERACTIVE SHOPPING CART DRAWER
+     ========================================== -->
+  <div class="cart-drawer-backdrop" id="cart-drawer-wrapper">
+    <div class="cart-drawer-panel">
+      <div class="cart-drawer-header">
+        <h3 class="cart-drawer-title">Shopping Bag (<span id="cart-count-title-qty">0</span>)</h3>
+        <button class="header-btn cart-drawer-close" id="cart-drawer-close-btn" aria-label="Close cart">
+          <span class="material-icons-outlined">close</span>
+        </button>
+      </div>
+
+      <!-- Free Shipping Promos -->
+      <div class="shipping-promo-box">
+        <div class="shipping-promo-text" id="shipping-progress-promo-message">
+          Spend <strong>$50.00</strong> more to unlock <strong>Free Shipping!</strong>
+        </div>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="shipping-progress-bar-indicator"></div>
+        </div>
+      </div>
+
+      <!-- Items List Container -->
+      <div class="cart-items-container" id="cart-drawer-items-list-container">
+        <!-- Rendered Dynamically by JS -->
+      </div>
+
+      <!-- Footer Cart Summary -->
+      <div class="cart-drawer-footer" id="cart-drawer-checkout-footer-block">
+        <div class="cart-summary-line">
+          <span>Subtotal</span>
+          <strong id="cart-subtotal-price-text">$0.00</strong>
+        </div>
+        <div class="cart-summary-line">
+          <span>Shipping</span>
+          <strong id="cart-shipping-price-text">Calculated at Checkout</strong>
+        </div>
+        <div class="cart-summary-line"
+          style="border-top: 1px solid var(--border-glass); padding-top: 12px; margin-top: 12px;">
+          <span>Estimated Total</span>
+          <strong class="cart-total-price" id="cart-estimated-total-price-text">$0.00</strong>
+        </div>
+
+        <button class="btn btn-primary" style="width: 100%; margin-top: 20px; font-size: 1.5rem;"
+          id="cart-checkout-proceed-btn">
+          Proceed to Checkout
+        </button>
+        <p class="cart-footer-notes">100% Secure Simulated Checkout Powered by Shopify CDN</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+     12. QUICK-VIEW PRODUCT MODAL
+     ========================================== -->
+  <div class="modal-backdrop" id="quick-view-modal-backdrop">
+    <div class="modal-wrapper">
+      <button class="modal-close-btn" id="quick-view-modal-close" aria-label="Close modal">
+        <span class="material-icons-outlined">close</span>
+      </button>
+
+      <div class="quickview-container" id="quick-view-product-details-content">
+        <!-- Rendered Dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+     13. FULL-SCREEN SIMULATED CHECKOUT OVERLAY
+     ========================================== -->
+  <div class="checkout-overlay" id="checkout-system-overlay-portal">
+    <div class="checkout-grid">
+      <!-- Checkout Main Inputs -->
+      <main class="checkout-main-form">
+        <div class="checkout-back-link" id="checkout-return-to-cart-action">
+          <span class="material-icons-outlined">arrow_back</span> Back to Shopping
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 40px; flex-wrap: wrap;">
+          <img src="logo.jpg" alt="Kitten Gems Logo"
+            style="height: 50px; width: auto; border-radius: var(--radius-xs); object-fit: contain;">
+          <h2 class="logo" style="font-size: 3.2rem; margin-bottom: 0; line-height: 1;">KITTEN GEMS</h2>
+        </div>
+
+        <!-- Step 1: Contact Details -->
+        <section style="margin-bottom: 40px;">
+          <h3 class="checkout-section-title">Contact Information</h3>
+          <div class="checkout-row">
+            <div class="form-group-item">
+              <label for="checkout-input-email">Email Address</label>
+              <input type="email" id="checkout-input-email" placeholder="email@example.com" required>
+            </div>
+            <div class="form-group-item">
+              <label for="checkout-input-phone">Phone Number</label>
+              <input type="tel" id="checkout-input-phone" placeholder="(555) 000-0000" required>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 2: Shipping Details -->
+        <section style="margin-bottom: 40px;">
+          <h3 class="checkout-section-title">Shipping Address</h3>
+          <div class="checkout-row">
+            <div class="form-group-item">
+              <label for="checkout-input-firstname">First Name</label>
+              <input type="text" id="checkout-input-firstname" placeholder="Jane" required>
+            </div>
+            <div class="form-group-item">
+              <label for="checkout-input-lastname">Last Name</label>
+              <input type="text" id="checkout-input-lastname" placeholder="Doe" required>
+            </div>
+          </div>
+          <div class="form-group-item">
+            <label for="checkout-input-address">Street Address</label>
+            <input type="text" id="checkout-input-address" placeholder="123 Beaded Lane" required>
+          </div>
+          <div class="checkout-row" style="grid-template-columns: 2fr 1fr 1fr;">
+            <div class="form-group-item">
+              <label for="checkout-input-city">City</label>
+              <input type="text" id="checkout-input-city" placeholder="Los Angeles" required>
+            </div>
+            <div class="form-group-item">
+              <label for="checkout-input-state">State</label>
+              <select id="checkout-input-state" required>
+                <option value="">Select</option>
+                <option value="CO">Colorado (CO)</option>
+                <option value="CA">California (CA)</option>
+                <option value="NY">New York (NY)</option>
+                <option value="TX">Texas (TX)</option>
+                <option value="FL">Florida (FL)</option>
+              </select>
+            </div>
+            <div class="form-group-item">
+              <label for="checkout-input-zip">ZIP Code</label>
+              <input type="text" id="checkout-input-zip" placeholder="80202" required>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 3: Payment Details -->
+        <section style="margin-bottom: 40px;">
+          <h3 class="checkout-section-title">Simulated Payment Info</h3>
+          <div class="form-group-item">
+            <label for="checkout-input-cardnum">Credit Card Number</label>
+            <input type="text" id="checkout-input-cardnum" placeholder="4111 2222 3333 4444" required>
+          </div>
+          <div class="checkout-row">
+            <div class="form-group-item">
+              <label for="checkout-input-cardexpiry">Expiry Date</label>
+              <input type="text" id="checkout-input-cardexpiry" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group-item">
+              <label for="checkout-input-cardcvv">Security Code (CVV)</label>
+              <input type="text" id="checkout-input-cardcvv" placeholder="123" required>
+            </div>
+          </div>
+        </section>
+
+        <button class="btn btn-primary" style="width: 100%; padding: 18px 0; font-size: 1.6rem;"
+          id="checkout-complete-order-submit-btn">
+          Complete Safe Order
+        </button>
+      </main>
+
+      <!-- Checkout Summary Column -->
+      <aside class="checkout-summary-col">
+        <h3 class="checkout-section-title">Order Summary</h3>
+
+        <!-- Bought items thumbnails summary -->
+        <div class="checkout-summary-items" id="checkout-items-summary-list-container">
+          <!-- Rendered Dynamically by JS -->
+        </div>
+
+        <!-- Promotional Code Box -->
+        <div class="checkout-promo-input-box">
+          <input type="text" id="checkout-coupon-code-input" placeholder="Discount or Promo Code (TRY 'GEM10')">
+          <button class="btn btn-outline" style="padding: 12px 20px;" id="checkout-coupon-apply-btn">Apply</button>
+        </div>
+
+        <!-- Summary Subtotals details -->
+        <div class="checkout-totals-block">
+          <div class="cart-summary-line" style="margin-bottom: 8px;">
+            <span>Subtotal</span>
+            <span id="checkout-totals-subtotal-price">$0.00</span>
+          </div>
+          <div class="cart-summary-line" style="margin-bottom: 8px;">
+            <span>Discount Applied</span>
+            <span id="checkout-totals-discount-price"
+              style="color: var(--color-primary); font-weight: 700;">-$0.00</span>
+          </div>
+          <div class="cart-summary-line" style="margin-bottom: 8px;">
+            <span>Shipping</span>
+            <span id="checkout-totals-shipping-price">Calculated</span>
+          </div>
+          <div class="cart-summary-line" style="margin-bottom: 8px;">
+            <span>Taxes (Simulated)</span>
+            <span id="checkout-totals-taxes-price">$0.00</span>
+          </div>
+          <div class="cart-summary-line"
+            style="border-top: 1px solid var(--border-glass); padding-top: 16px; margin-top: 16px;">
+            <strong style="font-size: 1.8rem;">Grand Total</strong>
+            <strong style="font-size: 2.4rem; color: var(--color-primary);"
+              id="checkout-totals-grandtotal-price">$0.00</strong>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ==========================================
+     14. CELEBRATORY ORDER SUCCESS VIEW SCREEN
+     ========================================== -->
+  <div class="checkout-success-view" id="checkout-order-success-screen-slide">
+    <div class="confetti-canvas-sim" id="success-confetti-particle-board">
+      <!-- confettis falling rendered dynamically -->
+    </div>
+
+    <div class="success-circle-icon">
+      <span class="material-icons-outlined">done</span>
+    </div>
+
+    <h1>Order Confirmed!</h1>
+    <p>Thank you for purchasing from Kitten Gems! Your order is being beautifully wrapped, packed, and will soon be
+      hand-crafted and shipped out by Maira.</p>
+
+    <!-- Receipt summary details -->
+    <div class="success-receipt-details">
+      <div class="receipt-line">
+        <span>Receipt Number</span>
+        <strong id="receipt-summary-number-text">#KG-87123</strong>
+      </div>
+      <div class="receipt-line">
+        <span>Ship To</span>
+        <strong id="receipt-summary-shipping-name">Jane Doe</strong>
+      </div>
+      <div class="receipt-line">
+        <span>Estimated Delivery</span>
+        <strong>5-7 Business Days</strong>
+      </div>
+      <div class="receipt-line">
+        <span>Total Paid</span>
+        <strong style="color: var(--color-primary); font-size: 1.8rem;"
+          id="receipt-summary-grandtotal-text">$0.00</strong>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" id="success-screen-return-home-btn" style="padding: 16px 40px; font-size: 1.5rem;">
+      Continue Shopping
+    </button>
+  </div>
+
+  <!-- ==========================================
+     15. SCRIPTS DATA & APPLICATION DRIVER
+     ========================================== -->
+  <!-- Cleaned catalog database first -->
+
+  <!-- JavaScript Modules -->
+  <script src="products_data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
